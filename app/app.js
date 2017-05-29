@@ -30,5 +30,5 @@ function bisection(fun,a,b)
 
 module.exports = {
     f:f,
-    bisekcja: bisekcja
+    bisection: bisection
 };
