@@ -4,7 +4,7 @@ function f(fun,x) {
 }
 
 
-function bisekcja(fun,a,b)
+function bisection(fun,a,b)
 {
     var eps=0.001;
     var x0;
