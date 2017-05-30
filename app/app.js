@@ -1,11 +1,17 @@
 function f(fun,x) {
-    //return Math.pow(x,3)-2*Math.pow(x,2)+4*x-1; // x^3-2*x^2+4*x-1
-    return eval(fun);
+    if( typeof fun==='string' && typeof x==='number'){
+        return eval(fun);
+    }
+    return false;
 }
 
 
 function bisection(fun,a,b)
 {
+    return false;
+    if (a>b || typeof a!=='number' || typeof b!=='number' || typeof a==null || typeof b==null) {
+        return false;
+    }
     var eps=0.001;
     var x0;
     var fa;
