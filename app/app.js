@@ -8,8 +8,7 @@ function f(fun,x) {
 
 function bisection(fun,a,b)
 {
-    return false;
-    if (a>b || typeof a!=='number' || typeof b!=='number' || typeof a==null || typeof b==null) {
+    if (a>=b || typeof a!=='number' || typeof b!=='number' || typeof fun!=='string') {
         return false;
     }
     var eps=0.001;
