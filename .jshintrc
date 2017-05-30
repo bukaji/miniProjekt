@@ -1,0 +1,33 @@
+{
+    "asi" : false,
+    "bitwise": true,
+    "browser": true,
+    "camelcase": true,
+    "curly": true,
+    "eqeqeq": false,
+    "eqnull": true,
+    "forin": true,
+    "freeze": true,
+    "immed": true,
+    "indent": 4,
+    "jquery": true,
+    "latedef": true,
+    "maxcomplexity": 30,
+    "maxdepth": 5,
+    "maxlen": 100,
+    "maxparams": 100,
+    "maxstatements": 0,
+    "newcap": true,
+    "noarg": true,
+    "noempty": true,
+    "nonbsp": true,
+    "nonew": true,
+    "plusplus": false,
+    "quotmark": "double", //4
+    "strict": false,
+    "trailing": true,
+    "undef": true,
+    "unused": true,
+    "evil": true
+}
+

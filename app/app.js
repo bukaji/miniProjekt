@@ -1,5 +1,5 @@
 function f(fun,x) {
-    if( typeof fun==='string' && typeof x==='number'){
+    if( typeof fun==="string" && typeof x==="number"){
         return eval(fun);
     }
     return false;
@@ -8,7 +8,7 @@ function f(fun,x) {
 
 function bisection(fun,a,b)
 {
-    if (a>=b || typeof a!=='number' || typeof b!=='number' || typeof fun!=='string') {
+    if (a>=b || typeof a!=="number" || typeof b!=="number" || typeof fun!=="string") {
         return false;
     }
     var eps=0.001;

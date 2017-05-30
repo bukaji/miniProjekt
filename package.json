@@ -1,11 +1,26 @@
 {
-    "name": "TiJO_06",
+    "name": "TiJO_MiniProjekt",
     "version": "1.0.0",
     "devDependencies": {
         "chai": "3.5.0",
-        "mocha": "3.2.0"
+        "mocha": "3.2.0",
+        "istanbul": "0.4.5",
+        "sinon": "2.1.0",
+        "sinon-chai": "2.9.0",
+        "stryker": "0.5.9",
+        "stryker-api": "0.4.2",
+        "stryker-html-reporter": "0.3.0",
+        "stryker-mocha-runner": "0.2.0",
+        "jshint": "2.9.4",
+        "jshint-html-reporter": "0.2.5",
+        "jshint-stylish": "2.2.1"
+
     },
     "scripts": {
-        "test": "node_modules/.bin/mocha --opts tests/mocha.opts"
+        "test": "node_modules/.bin/mocha --opts tests/mocha.opts",
+        "stryker": "stryker run stryker.conf.js",
+        "jshint": "jshint --reporter=node_modules/jshint-stylish  app/app.js || true",
+        "jshint-html": "jshint --reporter node_modules/jshint-html-reporter/reporter.js app/app.js > report.html || true",
+        "coverage": "node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive -R spec"
     }
 }
