@@ -26,6 +26,7 @@ function bisection(fun,a,b)
         }
     }
     return parseFloat(x0.toFixed(3));
+
 }
 
 module.exports = {
